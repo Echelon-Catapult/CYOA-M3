@@ -1,0 +1,65 @@
+#include <stdio.h>
+
+int main()
+{
+    int platform;
+    int mobileOptions;
+    int pcGame;
+    int controllerSetup;
+    int ps;
+    int xbox;
+    int nintendoSwitch;
+
+    printf("What is your favorite video game platform?\n");
+    printf("Input a 1 for mobile gaming\n");
+    printf("Input a 2 for pc/computer gaming\n");
+    printf("Input a 3 for controller\n");
+    printf("What option would you like to pick?\n");
+    scanf("%d", &platform);
+    if(platform == 1) {
+        printf("Which type of mobile do you like best?\n");
+        printf("Input 1 for google phones\n");
+        printf("Input 2 for apple ipads and phones\n");
+        printf("Input 3 for samsung tablets and phones\n");
+        scanf("%d", &mobileOptions);
+        printf("Good choice!\n");
+    }
+    else if(platform == 2) {
+        printf("What video game do you like to play on a pc/computer?\n");
+        printf("Input 1 for Fortnite Battle Royale\n");
+        printf("Input 2 for Among Us\n");
+        printf("Input 3 for Valorant\n");
+        scanf("%d", &pcGame);
+        printf("I love that game!!\n");
+    }
+    else if(platform == 3) {
+        printf("What is your favorite controller set up?\n");
+        printf("Input 1 for PlayStation\n");
+        printf("Input 2 for Xbox\n");
+        printf("Input 3 for Nintendo\n");
+        scanf("%d", &controllerSetup);
+        if(controllerSetup == 1) {
+            printf("Which Playstation do you like?\n");
+            printf("Input 1 for PS4\n");
+            printf("Input 2 for PS5\n");
+            scanf("%d", &ps);
+            printf("I love that PlayStation!\n");
+        }
+        else if(controllerSetup == 2) {
+            printf("Which Xbox do you like?\n");
+            printf("Input 1 for Xbox 1\n");
+            printf("Input 2 for Xbox Series X\n");
+            printf("Input 3 for Xbox 360\n");
+            scanf("%d", &xbox);
+            printf("I love that Xbox so much!\n");
+        }
+        else if(controllerSetup == 3) {
+            printf("Which Nintendo Switch do you like best?\n");
+            printf("Input 1 for Nintendo Switch(The original one)\n");
+            printf("Input 2 for Nintendo Switch Lite(The new model)\n");
+            scanf("%d", &nintendoSwitch);
+            printf("I like both types of Nintendo Switches, but the original one is better because you can play on a tv with it. In the Nintendo Switch Lite, you can't detach the joycons so you can't play big screen.\n");
+        }
+    }
+    return 0;
+}
