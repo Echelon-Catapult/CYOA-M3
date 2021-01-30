@@ -1,0 +1,85 @@
+#include <stdio.h>
+
+int main()
+{
+    //var declaration
+    char yesOrNo[32];
+    int choice1=0;
+    int choice2=0;
+    int choice3=0;
+    char choice4[32];
+    //scaning and if else
+    printf("Welcome to TGIF! For each choice write the one word. Write yes if you understand.\n");
+    scanf("%s", yesOrNo);
+    printf("Since it is TGIF, what do you want to do? Do you want to stay home or go spend the night outside? Write 1 or 2.\n");
+    scanf("%d", &choice1);
+    //
+    if (choice1==1){
+        printf("Since you're staying home, do you want to make food or order to-go? Write 1 or 2.\n");
+        scanf("%d", &choice2);
+    }
+    else (choice1==2){
+        printf("Since you're going out, do you want to go to a friend's house or to a restaurant with friends. Write 3 or 4.\n");
+        scanf("%d", &choice2);
+    }
+    //
+    if (choice2==1){
+        printf("Mmm! That was delicious! What to do next? Want to watch a movie or play video games? Write 1 or 2.\n");
+        scanf("%d", &choice3);
+    }
+    else (choice2==2){
+        printf("Which item to eat? Pizza or Thai? Write 3 or 4.\n");
+        scanf("%d", &choice3);
+    }
+    else (choice2==3){
+        printf("Well this is fun, talking to people and just chilling really makes time pass. Now we have to decide what to order. Chinese or Lebanese? Write 5 or 6.\n");
+        scanf("%d", &choice3);
+    }
+    else (choice2==4){
+        printf("Wow, this restaurant is packed! Should we order the salad or the burger for dinner? Type 7 or 8.\n");
+        scanf("%d", &choice3);
+    }
+    //
+    if (choice3==1){
+        printf("Which movie? Write it here. One word only btw...\n");
+        scanf("%s", choice4);
+        printf("WOW! %s is an amazing movie!!! What a fun night!\n", choice4);
+    }
+    else (choice3==2){
+        printf("Which game to play? Write it here. One word only btw...\n");
+        scanf("%s", choice4);
+        printf("That was a fun time! %s is such a fun game! What a fun night!\n", choice4);
+    }
+    else (choice3==3){
+        printf("Hmm which topping? Type a one word topping here.\n");
+        scanf("%s", choice4);
+        printf("MMM, MMM! That was some delicious pizza! Well, time to sleep then. GN\n");
+    }
+    else (choice3==4){
+        printf("Hard decision, noodles or rice? Write noodles or rice.\n");
+        scanf("%s", choice4);
+        printf("That was a good meal! Guess it's time to read a book, and then go to sleep. GN!\n");
+    }
+    else (choice3==5){
+        printf("So, now that we have picked which cuisine, which dish to get? One word only btw...\n");
+        scanf("%s", choice4);
+        printf("Mmm, mmm that was some good %s! Time to go home and go to bed.\n", choice4);
+    }
+    else (choice3==6){
+        printf("Now that we have a cuisine choice, which item should we order to eat? One word only btw...\n");
+        scanf("%s", choice4);
+        printf("That was some good food. I never knew that Lebanese food was so good! Well time to go home.\n");
+    }
+    else (choice3==7){
+        printf("What should we order to drink with the burger? One word only pls...\n");
+        scanf("%s", choice4);
+        printf("MM! That burger and the %s were so tasty! Time to go home now though. What a great day!\n", choice4);
+    }
+    else (choice3==8){
+        printf("What should we order to drink with the salad? One word only pls...\n");
+        scanf("%s", choice4);
+        printf("MM! That salad and the %s were so tasty! Time to go home now though. What a great day!\n", choice4);
+    }
+
+    return 0;
+}
